@@ -9,9 +9,9 @@ gem 'rake', '>= 10.3'
 # be loaded after loading the test library.
 gem 'mocha', '~> 0.14', require: false
 
-gem 'rack-cache', '~> 1.2'
-gem 'jquery-rails'
-gem 'coffee-rails', '~> 4.1.0'
+gem 'rack-cache', '~> 1.5', '>= 1.5.1'
+gem 'jquery-rails', '>= 4.1.1'
+gem 'coffee-rails', '~> 4.2.2'
 gem 'turbolinks'
 
 # require: false so bcrypt is loaded only when has_secure_password is used.
@@ -49,14 +49,14 @@ group :job do
   gem 'resque-scheduler', require: false
   gem 'sidekiq', require: false
   gem 'sucker_punch', '< 2.0', require: false
-  gem 'delayed_job', require: false
+  gem 'delayed_job', '>= 4.1.9', require: false
   gem 'queue_classic', github: "QueueClassic/queue_classic", branch: 'master', require: false, platforms: :ruby
   gem 'sneakers', require: false
   gem 'que', require: false
   gem 'backburner', require: false
   gem 'qu-rails', github: "bkeepers/qu", branch: "master", require: false
   gem 'qu-redis', require: false
-  gem 'delayed_job_active_record', require: false
+  gem 'delayed_job_active_record', '>= 4.1.5', require: false
   gem 'sequel', require: false
 end
 
